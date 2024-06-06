@@ -20,22 +20,7 @@ export const viewport = {
 export const metadata = getSEOTags({
   title: "Tunsian Pass",
   description: "Profitez d'un accès à de nombreux avantages dans les restaurants, bars, spas, fitness, et bien plus encore. Commencez à prendre soin de vous dès maintenant. Seulement en Tunisie.",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: 'sas.com',
-    title: "Tunisian Pass",
-    description: "Profitez d'un accès à de nombreux avantages dans les restaurants, bars, spas, fitness, et bien plus encore. Commencez à prendre soin de vous dès maintenant. Seulement en Tunisie.",
-    siteName: "Tunisian Pass",
-    images: [
-      {
-        url: "/opengraph-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Tunisian Pass",
-      },
-    ],
-  },
+  
 
 })
 
