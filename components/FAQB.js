@@ -14,14 +14,14 @@ const faqList = [
     question: "Quel type de contenu puis-je attendre ?",
     answer: (
       <p>
-       Vous pouvez vous attendre à une gamme variée de contenus, y compris des Stories Instagram, des publications dans le fil d'actualité et des Reels, adaptés à vos besoins spécifiques.
+       Vous pouvez vous attendre à une gamme variée de contenus, y compris des Stories Instagram, des publications dans le fil d&apos;actualité et des Reels, adaptés à vos besoins spécifiques.
       </p>
     ),
   },
   {
     question: "Qui crée le contenu ?  ",
     answer: (
-      <div className="space-y-2 leading-relaxed">Les modèles, influenceurs et créateurs de contenu de notre communauté collaborent avec les entreprises pour produire du contenu unique et tendance optmisé pour l'algorithme.      </div>
+      <div className="space-y-2 leading-relaxed">Les modèles, influenceurs et créateurs de contenu de notre communauté collaborent avec les entreprises pour produire du contenu unique et tendance optmisé pour l&apos;algorithme.      </div>
     ),
   },
 ];
