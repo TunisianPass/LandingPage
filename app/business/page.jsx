@@ -4,9 +4,7 @@ import HeroB from "@/components/HeroB";
 import FeaturesAccordion from "@/components/FeaturesAccordion";
 import TextyB from "@/components/TextyB";
 import FAQB from "@/components/FAQB";
-import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
-import PicturePage from '@/components/PicturePage';
 import { getSEOTags } from "@/libs/seo";
 
 

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tunisian-pass.tn
+
+# Sitemaps
+Sitemap: https://tunisian-pass.tn/sitemap.xml

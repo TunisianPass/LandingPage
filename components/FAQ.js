@@ -8,20 +8,20 @@ import { useRef, useState } from "react";
 const faqList = [
   {
     question: "Dois-je avoir un certain nombre de followers pour rejoindre ?",
-    answer: <div className="space-y-2 leading-relaxed">Non, il n'y a pas de nombre minimum de followers requis. Nous accueillons les modèles, influenceurs et créateur de contenu à tous les stades de leur parcours.</div>,
+    answer: <div className="space-y-2 leading-relaxed">Non, il n&apos;y a pas de nombre minimum de followers requis. Nous accueillons les modèles, influenceurs et créateur de contenu à tous les stades de leur parcours.</div>,
   },
   {
     question: "Dois-je publier sur les réseaux sociaux pour les offres que je récupère ?",
     answer: (
       <p>
-        Oui, c'est obligatoire. Publier du contenu de qualité sur les réseaux sociaux augmente votre visibilité et votre engagement, ce qui peut potentiellement conduire à plus d'opportunités sur Tunisian Pass.
+        Oui, c&apos;est obligatoire. Publier du contenu de qualité sur les réseaux sociaux augmente votre visibilité et votre engagement, ce qui peut potentiellement conduire à plus d&apos;opportunités sur Tunisian Pass.
       </p>
     ),
   },
   {
     question: "Si je m'inscris, combien de temps faut-il pour être accepté ?    ",
     answer: (
-      <div className="space-y-2 leading-relaxed">Notre processus de sélection varie. Nous avons une liste d'attente, donc votre patience est appréciée. Vous recevrez une notification si votre candidature est acceptée.
+      <div className="space-y-2 leading-relaxed">Notre processus de sélection varie. Nous avons une liste d&apos;attente, donc votre patience est appréciée. Vous recevrez une notification si votre candidature est acceptée.
       </div>
     ),
   },
