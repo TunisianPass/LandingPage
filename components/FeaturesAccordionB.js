@@ -1,4 +1,4 @@
-const FeaturesAccordion = () => {
+const FeaturesAccordionB = () => {
   return (
     <div className="max-w-7xl mx-auto px-6 sm:px-20 2xl:px-0 my-[150px] outer_container">
       <p className="flex justify-center gap-2">
@@ -32,11 +32,11 @@ const FeaturesAccordion = () => {
               </div>
               <div className="text-center sm:text-start space-y-2">
                 <p className="text-[42px] font-bold bricolage-grotesque-font leading-7">
-                  Créer votre offre
+                  Réservez
                 </p>
                 <p className="text-[15px] sm:text-lg font-normal poppins leading-6 sm:leading-7">
-                  Mettez les termes de votre offre pour nos membres, le reste
-                  est automatique.
+                  Réservez une offre en utilisant des crédits gratuits. Votre
+                  réservation sera confirmée par le business.
                 </p>
               </div>
             </li>
@@ -46,10 +46,13 @@ const FeaturesAccordion = () => {
               </div>
               <div className="text-center sm:text-start space-y-2">
                 <p className="text-[42px] font-bold bricolage-grotesque-font leading-7">
-                  Engagez nos membres
+                  Confirmez
                 </p>
                 <p className="text-[15px] sm:text-lg font-normal poppins leading-6 sm:leading-7">
-                  Choisissez l&apos;influenceur qui vous convient le mieux{" "}
+                  Allez au lieu à l&apos;heure indiquée dans l&apos;offre et
+                  enregistrez-vous. Il vous suffit de confirmer votre presence
+                  en montrant votre reservation au lieu pour recevoir votre
+                  offre.{" "}
                 </p>
               </div>
             </li>
@@ -59,11 +62,11 @@ const FeaturesAccordion = () => {
               </div>
               <div className="text-center sm:text-start space-y-2">
                 <p className="text-[42px] font-bold bricolage-grotesque-font leading-7">
-                  Laissez nous faire
+                  Postez
                 </p>
                 <p className="text-[15px] sm:text-lg font-normal poppins leading-6 sm:leading-7">
-                  Concentrez-vous sur votre activité ! Tunisian Pass
-                  s&apos;occupe de votre croissance.
+                  Après avoir reçu votre produit ou service, postez sur
+                  Instagram en suivant les exigences de l&apos;offre.
                 </p>
               </div>
             </li>
@@ -74,4 +77,4 @@ const FeaturesAccordion = () => {
   );
 };
 
-export default FeaturesAccordion;
+export default FeaturesAccordionB;

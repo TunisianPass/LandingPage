@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import FeaturesAccordion from "@/components/FeaturesAccordion";
+import FeaturesAccordionB from "@/components/FeaturesAccordionB";
 import Texty from "@/components/Texty";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
@@ -26,7 +26,7 @@ const Models = () => {
         {/* <Problem /> */}
         <PicturePage />
         <Texty />
-        <FeaturesAccordion />
+        <FeaturesAccordionB />
         <FAQ />
       </main>
       <Footer />
