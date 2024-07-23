@@ -9,15 +9,6 @@ const nextConfig = {
       "logos-world.net",
     ],
   },
-   async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/models",
-        permanent: true,
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;
