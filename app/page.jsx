@@ -1,15 +1,13 @@
-"use client";
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+export default function Page() {
+  return (
+    <>
+      <h1>Business Side</h1>
+    </>
+  );
+}
 
-const HomePage = () => {
-  const router = useRouter();
-
-  useEffect(() => {
-    router.replace("/models");
-  }, [router]);
-
-  return null; 
-};
-
-export default HomePage;
+export const metadata = {
+  verification: {
+    google: '1-7Zz5bv2FSABW_6NHwXV6pjrR-QKnCLJJ50_NOOqxs',
+  },
+}
