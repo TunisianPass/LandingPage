@@ -1,7 +1,3 @@
-"use client";
-
-import config from "@/config";
-
 const AnimatedLogoCloud = () => {
   const logos = [
     {
