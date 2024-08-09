@@ -17,8 +17,39 @@ module.exports = {
         wiggle: "wiggle 1.5s ease-in-out infinite",
         popup: "popup 0.25s ease-in-out",
         shimmer: "shimmer 3s ease-out infinite alternate",
+        'logo-cloud': 'logo-cloud 30s linear infinite', 
+        buttonheartbeat: 'buttonheartbeat 2s infinite ease-in-out',
+        textGradient: 'textGradient 5s ease infinite',
       },
       keyframes: {
+        textGradient: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },
+        },
+        buttonheartbeat: {
+          '0%': {
+            'box-shadow': '0 0 0 0 theme("colors.yellow.500")',
+            transform: 'scale(1)',
+          },
+          '50%': {
+            'box-shadow': '0 0 0 7px theme("colors.yellow.500/0")',
+            transform: 'scale(1.05)',
+          },
+          '100%': {
+            'box-shadow': '0 0 0 0 theme("colors.yellow.500/0")',
+            transform: 'scale(1)',
+          },
+        },
+        "logo-cloud": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - 4rem))" },
+        },
         opacity: {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },

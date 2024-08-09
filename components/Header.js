@@ -7,7 +7,7 @@ import Image from "next/image";
 import ButtonSignin from "./ButtonSignin";
 import logo from "@/app/icon.png";
 import config from "@/config";
-
+import SimpleBanner from "./SimpleBanner";
 const links = [
   {
     href: "/models",
@@ -34,9 +34,11 @@ const Header = () => {
   }, [searchParams]);
 
   return (
-    <header className="">
+    <header>
+        <SimpleBanner />
+
       <nav
-        className="container flex items-center justify-between px-8 py-4 mx-auto"
+        className="container mt-16 flex items-center justify-between px-8 py-4 mx-auto"
         aria-label="Global"
       >
         {/* Your logo/name on large screens */}
@@ -100,7 +102,7 @@ const Header = () => {
 
         {/* CTA on large screens */}
         <div className="hidden lg:flex lg:justify-end lg:flex-1 ">        <a
-          className="hidden sm:block text-white font-normal text-[17px] poppins leading-4 bg-[#111111] py-4 px-8 rounded-full"
+          className="animate-buttonheartbeat hidden sm:block text-white font-normal text-[17px] poppins leading-4 bg-[#111111] py-4 px-8 rounded-full"
           title="Get started"
           href="/sign-up"
         >

@@ -6,9 +6,9 @@
 const Texty = () => {
   return (
     <div className="pt-[140px] max-w-7xl mx-auto px-6 sm:px-20 2xl:px-0">
-    <p className="font-semibold text-[28px] sm:text-5xl bricolage-grotesque-font leading-snug sm:leading-[60px]">
+    <p className="font-semibold text-[28px] sm:text-5xl bricolage-grotesque-font leading-snug sm:leading-[60px] ">
       <span className="text-[#111111]">
-        Ameliore ton quotidien avec <span  className="text-yellow-500 font-extrabold">Tunisian Pass</span>
+        Ameliore ton quotidien avec <span  className="animate-textGradient bg-gradient-to-r from-[#FBC570] via-yellow-600 to-yellow-400 inline-block text-transparent bg-clip-text font-extrabold">Tunisian Pass</span>
       </span>
       <br />
       <span className="text-[#999999]">

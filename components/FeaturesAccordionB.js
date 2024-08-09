@@ -2,15 +2,15 @@ const FeaturesAccordionB = () => {
   return (
     <div className="max-w-7xl mx-auto px-6 sm:px-20 2xl:px-0 my-[150px] outer_container">
       <p className="flex justify-center gap-2">
-        <span className="text-black text-[28px] sm:text-[54px] bricolage-grotesque-font font-medium leading-[64px] bg-gradient-to-r from-[#47BEB9] via-[#47BEB9] to-[#DDCD86] inline-block text-transparent bg-clip-text">
+        <span className="text-[28px] sm:text-[54px] bricolage-grotesque-font font-medium leading-[64px] bg-gradient-to-r animate-textGradient from-[#47BEB9] via-[#47BEB9] to-[#DDCD86] inline-block text-transparent bg-clip-text ">
           Comment ça marche
         </span>
       </p>
       <div className="grid grid-cols-2 mt-6 sm:mt-[200px] ">
         <div className="col-span-2 sm:col-span-1 flex justify-center">
           <div className="bg-black h-[450px] sm:h-[630px] w-[300px] sm:w-[455px] rounded-lg">
-            <video
-              src="/1.mp4"
+            <img
+              src="/Intro.gif"
               autoPlay
               muted
               loop
@@ -31,7 +31,7 @@ const FeaturesAccordionB = () => {
                 1
               </div>
               <div className="text-center sm:text-start space-y-2">
-                <p className="text-[42px] font-bold bricolage-grotesque-font leading-7">
+                <p className="text-[42px] font-bold bricolage-grotesque-font leading-10">
                   Réservez
                 </p>
                 <p className="text-[15px] sm:text-lg font-normal poppins leading-6 sm:leading-7">
@@ -45,7 +45,7 @@ const FeaturesAccordionB = () => {
                 2
               </div>
               <div className="text-center sm:text-start space-y-2">
-                <p className="text-[42px] font-bold bricolage-grotesque-font leading-7">
+                <p className="text-[42px] font-bold bricolage-grotesque-font leading-10">
                   Confirmez
                 </p>
                 <p className="text-[15px] sm:text-lg font-normal poppins leading-6 sm:leading-7">
@@ -61,7 +61,7 @@ const FeaturesAccordionB = () => {
                 3
               </div>
               <div className="text-center sm:text-start space-y-2">
-                <p className="text-[42px] font-bold bricolage-grotesque-font leading-7">
+                <p className="text-[42px] font-bold bricolage-grotesque-font leading-10">
                   Postez
                 </p>
                 <p className="text-[15px] sm:text-lg font-normal poppins leading-6 sm:leading-7">
