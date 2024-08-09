@@ -1,9 +1,9 @@
 const TextyB = () => {
   return (
-    <div className="items-center justify-center flex flex-row">
+    <div className="mt-20 items-center justify-center flex flex-row">
       <div className="md:max-w-[670px] max-w-[350px] flex flex-col  items-center sm:mt-[200px]">
         <p className="text-[28px] md:text-5xl text-[#111111] font-bold bricolage-grotesque-font leading-9 text-center">
-          <span className="bg-gradient-to-r from-[#47BEB9] via-[#47BEB9] to-[#DDCD86] inline-block text-transparent bg-clip-text">
+          <span className="animate-textGradient bg-gradient-to-r from-blue-500 via-[#47BEB9] to-[#DDCD86] inline-block text-transparent bg-clip-text">
             Mettez en avant
           </span>{" "}
           votre marque en échange de vos produits et services.

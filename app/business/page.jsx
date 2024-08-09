@@ -6,6 +6,7 @@ import TextyB from "@/components/TextyB";
 import FAQB from "@/components/FAQB";
 import Footer from "@/components/Footer";
 import { getSEOTags } from "@/libs/seo";
+import PicturePage from '@/components/PicturePage';
 
 
 export const metadata = getSEOTags({
@@ -22,6 +23,7 @@ const Business = () => {
     </Suspense>
     <main>
       <HeroB />
+      <PicturePage />
       <TextyB />
       <FeaturesAccordion />
       <FAQB />
