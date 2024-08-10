@@ -8,6 +8,7 @@ const nextConfig = {
       "images.unsplash.com",
       "logos-world.net",
       "res.cloudinary.com",
+      "giphy.com"
     ],
   },
 };
