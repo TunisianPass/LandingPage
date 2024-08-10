@@ -10,7 +10,7 @@ const FeaturesAccordion = () => {
         <div className="col-span-2 sm:col-span-1 flex justify-center">
           <div className="bg-black h-[450px] sm:h-[630px] w-[300px] sm:w-[455px] rounded-lg">
             <img
-              src="/Intro.gif"
+              src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXRjYnJhcW1rZzQ5aG84amI1eTZrbWFncThuMmVuaXQzMnRqMzB1biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VSyglS6kwhZHbZ8gTP/giphy-downsized-large.gif"
               autoPlay
               muted
               loop
