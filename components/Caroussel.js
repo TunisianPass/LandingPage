@@ -41,7 +41,7 @@ const AnimatedLogoCloud = () => {
                   <img
                     key={key}
                     src={logo.url}
-                    className="h-34 w-40 px-2 "
+                    className="h-34 w-40 px-2 brightness-0"
                     alt={`${logo.name}`}
                   />
                 ))}
