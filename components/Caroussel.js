@@ -17,6 +17,10 @@ const AnimatedLogoCloud = () => {
     {
       name: "Les Dunes",
       url: "/Restau/lesdunes.png",
+    },
+    {
+      "name": "Kenko",
+      "url": "/Restau/kenko.png"
     }
   ];
   return (
