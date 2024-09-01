@@ -38,7 +38,7 @@ const Header = () => {
         <SimpleBanner />
 
       <nav
-        className="container mt-16 flex items-center justify-between px-8 py-4 mx-auto"
+        className="container  sticky top-0 z-50  mt-16 flex items-center justify-between px-8 py-4 mx-auto"
         aria-label="Global"
       >
         {/* Your logo/name on large screens */}

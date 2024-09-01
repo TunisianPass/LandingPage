@@ -10,6 +10,7 @@ import { Toaster } from "react-hot-toast";
 import { Tooltip } from "react-tooltip";
 import config from "@/config";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import PlausibleProvider from "next-plausible";
 
 // Crisp customer chat support:
 // This component is separated from ClientLayout because it needs to be wrapped with <SessionProvider> to use useSession() hook
@@ -55,6 +56,7 @@ const CrispChat = () => {
 const ClientLayout = ({ children }) => {
   return (
     <>
+    <PlausibleProvider domain="tunisian-pass.tn">
       <SessionProvider>
         {/* Show a progress bar at the top when navigating between pages */}
         <NextTopLoader color={config.colors.main} showSpinner={false} />
@@ -79,6 +81,7 @@ const ClientLayout = ({ children }) => {
         {/* Set Crisp customer chat support */}
         <CrispChat />
       </SessionProvider>
+      </PlausibleProvider>
     </>
   );
 };
