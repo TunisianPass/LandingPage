@@ -10,10 +10,6 @@ export const viewport = {
   initialScale: 1,
 };
 
-export const metadata = getSEOTags({
-  title: "TunsianPass",
-  description: "Profitez avec Tunisian Pass d'un accès à de nombreux avantages dans les restaurants, bars, spas, fitness, et bien plus encore. Commencez à prendre soin de vous dès maintenant. Seulement en Tunisie grace à Tunisian Pass.",
-});
 
 export default function RootLayout({ children }) {
   return (

@@ -11,7 +11,7 @@ import PicturePage from '@/components/PicturePage';
 
 export const metadata = getSEOTags({
   title: "Tunsian Pass",
-  description: "Profitez d'un accès à de nombreux avantages dans les restaurants, bars, spas, fitness, et bien plus encore. Commencez à prendre soin de vous dès maintenant. Seulement en Tunisie.",
+  description: "Augmentez votre visibilité en connectant votre établissement avec des créateurs de contenu et micro-influenceurs locaux. Échangez des expériences pour gagner en influence.",
 
 })
 
