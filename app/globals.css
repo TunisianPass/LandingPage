@@ -1,22 +1,4 @@
-/* global.css */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  src: url('/Bricolage_Grotesque/static/BricolageGrotesque-24pt-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  src: url('/Bricolage_Grotesque/static/BricolageGrotesque-24pt-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body {
-  font-family: 'Bricolage Grotesque', sans-serif;
-}
+  

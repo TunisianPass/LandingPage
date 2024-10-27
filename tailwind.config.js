@@ -1,25 +1,25 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ["class"],
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./styles/globals.css",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,jsx}',
+    './styles/globals.css',
   ],
+  prefix: "",
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       backgroundImage: {
-        gradient:
-          "linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82)",
-      },
-      animation: {
-        opacity: "opacity 0.25s ease-in-out",
-        appearFromRight: "appearFromRight 300ms ease-in-out",
-        wiggle: "wiggle 1.5s ease-in-out infinite",
-        popup: "popup 0.25s ease-in-out",
-        shimmer: "shimmer 3s ease-out infinite alternate",
-        'logo-cloud': 'logo-cloud 30s linear infinite', 
-        buttonheartbeat: 'buttonheartbeat 2s infinite ease-in-out',
-        textGradient: 'textGradient 5s ease infinite',
+        gradient: "linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82)",
       },
       keyframes: {
         textGradient: {
@@ -85,15 +85,31 @@ module.exports = {
           "50%": { backgroundPosition: "100% 50%" },
           "100%": { backgroundPosition: "0% 50%" },
         },
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+        opacity: "opacity 0.25s ease-in-out",
+        appearFromRight: "appearFromRight 300ms ease-in-out",
+        wiggle: "wiggle 1.5s ease-in-out infinite",
+        popup: "popup 0.25s ease-in-out",
+        shimmer: "shimmer 3s ease-out infinite alternate",
+        'logo-cloud': 'logo-cloud 30s linear infinite', 
+        buttonheartbeat: 'buttonheartbeat 2s infinite ease-in-out',
+        textGradient: 'textGradient 5s ease infinite',
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("tailwindcss-animate"), require("daisyui")],
   daisyui: {
-    // Light & dark themes are added by default (it switches automatically based on OS settings)
-    // You can add another theme among the list of 30+
-    // Add "data-theme='theme_name" to any HTML tag to enable the 'theme_name' theme.
-    // https://daisyui.com/
     themes: ["light", "dark", "lofi"],
   },
 };
