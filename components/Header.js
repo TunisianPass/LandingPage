@@ -17,6 +17,10 @@ const links = [
     href: "/business",
     label: "Business",
   },
+    {
+    href: "/fortune",
+    label: "Fortune",
+  },
 ];
 
 const cta = <ButtonSignin text="NOUS REJOINDRE" extraStyle="btn btn-outline rounded-lg" />;
