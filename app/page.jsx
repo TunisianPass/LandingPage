@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 
 export default function Page() {
-  redirect('/models')
+  redirect('/fortune')
   return (
     <>
       <h1>Business Side</h1>
