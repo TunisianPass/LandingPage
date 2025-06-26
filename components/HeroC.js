@@ -20,14 +20,14 @@ const HeroC = () => {
           </span>{" "}
         </p>
 <br/>
-        <p className="text-center  text-[16px] leading-6 mt-6 sm:mt-12 px-6 sm:px-20 lg:px-24 max-w-[595x] xl:max-w-[800px] mx-auto poppins text-[#000000]">
+        <div className="text-center  text-[16px] leading-6 mt-6 sm:mt-12 px-6 sm:px-20 lg:px-24 max-w-[595x] xl:max-w-[800px] mx-auto poppins text-[#000000]">
           <div className="text-xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
             Un seul QR code pour
             <FlipWords className="text-center font-bold"words={words} /> 
           </div>
           <br />
           <br />
-        </p>
+        </div>
 
         <p className="text-center text-[12px] leading-5 mt-2 sm:mt-12 px-6 sm:px-20 lg:px-24 max-w-[560px] xl:max-w-[800px] mx-auto poppins text-[#000000]">
           <span className="inline lg:block">

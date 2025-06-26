@@ -2,29 +2,6 @@ import Link from "next/link";
 import { getSEOTags } from "@/libs/seo";
 import config from "@/config";
 
-// CHATGPT PROMPT TO GENERATE YOUR PRIVACY POLICY — replace with your own data 👇
-
-// 1. Go to https://chat.openai.com/
-// 2. Copy paste bellow
-// 3. Replace the data with your own (if needed)
-// 4. Paste the answer from ChatGPT directly in the <pre> tag below
-
-// You are an excellent lawyer.
-
-// I need your help to write a simple privacy policy for my website. Here is some context:
-// - Website: https://shipfa.st
-// - Name: ShipFast
-// - Description: A JavaScript code boilerplate to help entrepreneurs launch their startups faster
-// - User data collected: name, email and payment information
-// - Non-personal data collection: web cookies
-// - Purpose of Data Collection: Order processing
-// - Data sharing: we do not share the data with any other parties
-// - Children's Privacy: we do not collect any data from children
-// - Updates to the Privacy Policy: users will be updated by email
-// - Contact information: marc@shipfa.st
-
-// Please write a simple privacy policy for my site. Add the current date.  Do not add or explain your reasoning. Answer:
-
 export const metadata = getSEOTags({
   title: `Privacy Policy | ${config.appName}`,
   canonicalUrlRelative: "/privacy-policy",
@@ -46,7 +23,7 @@ const PrivacyPolicy = () => {
               d="M15 10a.75.75 0 01-.75.75H7.612l2.158 1.96a.75.75 0 11-1.04 1.08l-3.5-3.25a.75.75 0 010-1.08l3.5-3.25a.75.75 0 111.04 1.08L7.612 9.25h6.638A.75.75 0 0115 10z"
               clipRule="evenodd"
             />
-          </svg>{" "}
+          </svg>
           Back
         </Link>
         <h1 className="text-3xl font-extrabold pb-6">
@@ -57,51 +34,60 @@ const PrivacyPolicy = () => {
           className="leading-relaxed whitespace-pre-wrap"
           style={{ fontFamily: "sans-serif" }}
         >
-          {`Last Updated: 2023-08-25
+          {`Last Updated: June 25, 2025
 
-Thank you for visiting ShipFast ("we," "us," or "our"). This Privacy Policy outlines how we collect, use, and protect your personal and non-personal information when you use our website located at https://shipfa.st (the "Website").
+TunisianPass SARL (Parc Essaada, 2078 – La Marsa, Tunis, Tunisia)
+Matricule Fiscal: 1914582A
+Main activity: Public relations and communication consulting
+Date of establishment: 25/02/2025
 
-By accessing or using the Website, you agree to the terms of this Privacy Policy. If you do not agree with the practices described in this policy, please do not use the Website.
+Thank you for trusting ${config.appName} ("we," "us," or "our"). This Privacy Policy explains how we collect, use, share, and protect your information when you use our website at ${config.domainName} (the "Website").
 
-1. Information We Collect
+1. Data Controller
+TunisianPass SARL is the controller of your personal data processed under this policy.
 
-1.1 Personal Data
+2. Information We Collect
+- Merchant Data: Company name, contact person, email, phone, billing details (to provision and manage your account).
+- Customer Data: When guests scan QR codes: name, email, phone number, unique device identifier (to deliver our services).
+- Usage Data: Scan timestamps, review submissions, wheel-spin outcomes, IP address, browser/user-agent.
 
-We collect the following personal information from you:
+3. Purpose and Legal Basis
+- Contractual Necessity: To provide, maintain, and improve our Services.
+- Legitimate Interests: Fraud detection, platform security, analytics.
+- Consent: When explicitly provided for marketing communications.
 
-Name: We collect your name to personalize your experience and communicate with you effectively.
-Email: We collect your email address to send you important information regarding your orders, updates, and communication.
-Payment Information: We collect payment details to process your orders securely. However, we do not store your payment information on our servers. Payments are processed by trusted third-party payment processors.
+4. Cookies & Non-Personal Data
+We use cookies and similar technologies to collect non-personal data (e.g., browsing behavior, device info) to enhance your experience and analyze usage patterns.
 
-1.2 Non-Personal Data
+5. Data Sharing
+We do not sell or rent personal data. We share data only with:
+- Service Providers: Hosting, analytics, and payment processors under strict confidentiality.
+- Legal Authorities: When required by Tunisian law.
 
-We may use web cookies and similar technologies to collect non-personal information such as your IP address, browser type, device information, and browsing patterns. This information helps us to enhance your browsing experience, analyze trends, and improve our services.
+6. Data Retention
+- Merchant data: retained for the duration of your subscription plus 24 months.
+- Customer & usage data: retained for up to 36 months before anonymization or deletion.
 
-2. Purpose of Data Collection
+7. Security
+We implement encryption in transit, secure data centers, and access controls to protect your data. However, no system is infallible—use our Services at your own risk.
 
-We collect and use your personal data for the sole purpose of order processing. This includes processing your orders, sending order confirmations, providing customer support, and keeping you updated about the status of your orders.
+8. Your Rights
+Under Tunisian data protection law, you may request access, correction, deletion, restriction, objection, or data portability of your personal data. To exercise, contact us at privacy@tunisian-pass.tn.
 
-3. Data Sharing
+9. International Transfers
+Your data may be processed outside Tunisia; we ensure adequate safeguards via contractual agreements.
 
-We do not share your personal data with any third parties except as required for order processing (e.g., sharing your information with payment processors). We do not sell, trade, or rent your personal information to others.
+10. Children’s Privacy
+Our Services are not directed to individuals under 13. We do not knowingly collect data from minors.
 
-4. Children's Privacy
+11. Policy Updates
+We may modify this policy; significant changes will be notified by email or dashboard notice. Continued use constitutes acceptance.
 
-ShipFast is not intended for children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us at the email address provided below.
-
-5. Updates to the Privacy Policy
-
-We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any updates will be posted on this page, and we may notify you via email about significant changes.
-
-6. Contact Information
-
-If you have any questions, concerns, or requests related to this Privacy Policy, you can contact us at:
-
-Email: marc@shipfa.st
-
-For all other inquiries, please visit our Contact Us page on the Website.
-
-By using ShipFast, you consent to the terms of this Privacy Policy.`}
+12. Contact
+Hedi Fourati, CEO
+Email: hedi_fourati@icloud.com
+Phone: +216 28 655 624
+`}
         </pre>
       </div>
     </main>

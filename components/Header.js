@@ -4,26 +4,15 @@ import { useState, useEffect } from "react";
 import { useSearchParams, usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import ButtonSignin from "./ButtonSignin";
 import logo from "@/app/icon.png";
 import config from "@/config";
 import SimpleBanner from "./SimpleBanner";
 const links = [
   {
-    href: "/models",
-    label: "Models",
-  },
-  {
-    href: "/business",
-    label: "Business",
-  },
-    {
     href: "/fortune",
     label: "Fortune",
   },
 ];
-
-const cta = <ButtonSignin text="NOUS REJOINDRE" extraStyle="btn btn-outline rounded-lg" />;
 
 // A header with a logo on the left, links in the center (like Pricing, etc...), and a CTA (like Get Started or Login) on the right.
 // The header is responsive, and on mobile, the links are hidden behind a burger button.
@@ -39,7 +28,7 @@ const Header = () => {
 
   return (
     <header>
-        <SimpleBanner />
+      <SimpleBanner />
 
       <nav
         className="container  sticky top-0 z-50  mt-16 flex items-center justify-between px-8 py-4 mx-auto"
@@ -95,8 +84,6 @@ const Header = () => {
             <Link
               href={link.href}
               key={link.href}
-              className={`link link-hover ${pathname === link.href ? 'underline underline-offset-4' : ''}`}
-
               title={link.label}
             >
               {link.label}
@@ -105,13 +92,15 @@ const Header = () => {
         </div>
 
         {/* CTA on large screens */}
-        <div className="hidden lg:flex lg:justify-end lg:flex-1 ">        <a
-          className="animate-buttonheartbeat hidden sm:block text-white font-normal text-[17px] poppins leading-4 bg-[#111111] py-4 px-8 rounded-full"
-          title="Get started"
-          href="/sign-up"
-        >
-          Commencer
-        </a>
+        <div className="hidden lg:flex lg:justify-end lg:flex-1 ">
+          {" "}
+          <a
+            className="animate-buttonheartbeat hidden sm:block text-white font-normal text-[17px] poppins leading-4 bg-[#111111] py-4 px-8 rounded-full"
+            title="Get started"
+            href="/contact"
+          >
+            Commencer
+          </a>
         </div>
       </nav>
 
@@ -169,8 +158,6 @@ const Header = () => {
                   <Link
                     href={link.href}
                     key={link.href}
-                    className={`link link-hover ${pathname === link.href ? 'underline underline-offset-4 text-blue-500' : ''}`}
-
                     title={link.label}
                   >
                     {link.label}
@@ -180,7 +167,6 @@ const Header = () => {
             </div>
             <div className="divider"></div>
             {/* Your CTA on small screens */}
-            <div className="flex flex-col">{cta}</div>
           </div>
         </div>
       </div>

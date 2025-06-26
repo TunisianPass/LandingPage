@@ -34,7 +34,7 @@ const Footer = () => {
               {config.appDescription}
             </p>
             <p className="mt-3 text-sm text-base-content/60">
-              © {new Date().getFullYear()} H&H. All rights reserved
+              © {new Date().getFullYear()} TunisianPass. All rights reserved
             </p>
           </div>
           <div className="flex-grow flex flex-wrap justify-center -mb-10 md:mt-0 mt-10 text-center">
@@ -44,12 +44,8 @@ const Footer = () => {
               </div>
 
               <div className="flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm">
-               
-                <Link href="/models" className="link link-hover">
-                  Models
-                </Link>
-                <Link href="/business" className="link link-hover">
-                  Business
+                <Link href="/en" className="link link-hover">
+                  English
                 </Link>
               </div>
             </div>

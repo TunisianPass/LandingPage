@@ -5,59 +5,59 @@ const AnimatedLogoCloud = () => {
     //   url: '/Restau/closerie.png',
     // },
 
-    {
-      name: "Sindbad",
-      url: "/Restau/sindbad.png",
-    },
-    {
-      name: "White",
-      url: "/Restau/white.png",
-    },
-    {
-      name: "Village",
-      url: "/Restau/thevillage.png",
-    },
-    {
-      name: "NOA",
-      url: "/Restau/noa.png",
-    },
-    {
-      name: "royaltulip",
-      url: "/Restau/royaltulip.png",
-    },
+    // {
+    //   name: "Sindbad",
+    //   url: "/Restau/sindbad.png",
+    // },
+    // {
+    //   name: "White",
+    //   url: "/Restau/white.png",
+    // },
+    // {
+    //   name: "Village",
+    //   url: "/Restau/thevillage.png",
+    // },
+    // {
+    //   name: "NOA",
+    //   url: "/Restau/noa.png",
+    // },
+    // {
+    //   name: "royaltulip",
+    //   url: "/Restau/royaltulip.png",
+    // },
     // {
     //   name: "origami",
     //   url: "/Restau/origami.png",
     // },
-    {
-      name: "terraza",
-      url: "/Restau/terraza.png",
-    },
-    {
-      name: "zink",
-      url: "/Restau/zink.png",
-    },
+    // {
+    //   name: "terraza",
+    //   url: "/Restau/terraza.png",
+    // },
+    // {
+    //   name: "zink",
+    //   url: "/Restau/zink.png",
+    // },
     // {
     //   name: "thebigdip.png",
     //   url: "/Restau/thebigdip.png",
     // },
-    {
-      name: "thevillage",
-      url: "/Restau/thevillage.png",
-    },
-    {
-      name: "antony1",
-      url: "/Restau/antony1.png",
-    },
+    // {
+    //   name: "thevillage",
+    //   url: "/Restau/thevillage.png",
+    // },
+    // {
+    //   name: "antony1",
+    //   url: "/Restau/antony1.png",
+    // },
     { name: "fumoir", url: "/Restau/fumoir.png" },
-    {
-      name: "716",
-      url: "/Restau/716.png",
-    },
-    {
-      name: "aqualounge",
-      url: "/Restau/aqualounge.png",
-    },
+    // {
+    //   name: "716",
+    //   url: "/Restau/716.png",
+    // },
+    // {
+    //   name: "aqualounge",
+    //   url: "/Restau/aqualounge.png",
+    // },
     // {
     //   name: "Tchevap",
     //   url: "/Restau/tchevap.png",
@@ -70,6 +70,37 @@ const AnimatedLogoCloud = () => {
     //   "name": "Kenko",
     //   "url": "/Restau/kenko.png"
     // }
+    {
+      name : "Kenko Food Bar",
+      url: "/Restau/kenko.png"
+    },
+    {
+      name: "Sidi Bou Bar & Restaurant",
+      url: "/Restau/sidiboubar.png"
+    },
+    {
+      name: "bylilideco",
+      url: "/Restau/bylilideco.png"
+    },
+    {
+      name: "Les Muses",
+      url: "/Restau/lesmuses.png"
+    },
+    {
+      name: "Sakura Pasta",
+      url: "/Restau/sakurapasta.png"
+    },
+    {
+      name: "Le Safran",
+      url: "/Restau/lesafran.png"
+    },
+    {
+      name: "Smoky Buns",
+      url: "/Restau/smokybuns.png"
+    }
+
+
+
   ];
   return (
     <div className="w-full py-12">
