@@ -2,11 +2,6 @@ import { redirect } from "next/navigation";
 
 export default function Page() {
   redirect('/fortune')
-  return (
-    <>
-      <h1>Business Side</h1>
-    </>
-  );
 }
 
 export const metadata = {

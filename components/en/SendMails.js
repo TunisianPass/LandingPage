@@ -22,17 +22,16 @@ const SendMails = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await formulaireFunction(formData);
-    alert("Votre demande a bien été envoyée !");
+    alert("Your request has been sent successfully!");
   };
 
   return (
     <div className="p-8 rounded-md max-w-md mx-auto">
       <h1 className="text-3xl font-bold mb-4 text-center">
-        Envie d&apos;en savoir plus sur TunisianPass Fortune ?
+        Want to learn more about TunisianPass Fortune?
       </h1>
       <p className="text-center mb-6">
-        Toute l&apos;équipe TunisianPass se tient prête à répondre à vos
-        questions et à vous accompagner dans votre projet.
+        The entire TunisianPass team is ready to answer your questions and support you with your project.
       </p>
       <div className="flex flex-col items-center justify-center mb-6">
         <div className="flex justify-center space-x-2 mb-2">
@@ -40,20 +39,20 @@ const SendMails = () => {
             onClick={() => setShowForm(true)}
             className={`btn ${showForm ? "btn-primary" : "btn-outline"}`}
           >
-            Être rappelé
+            Request a callback
           </button>
           <button
             onClick={() => setShowForm(false)}
             className={`btn ${!showForm ? "btn-primary" : "btn-outline"}`}
           >
-            Nous contacter
+            Contact us
           </button>
         </div>
         <Link
           href={"https://cal.com/tunisian-pass/15min"}
           className="btn btn-outline"
         >
-          Choisir un créneau
+          Book a time slot
         </Link>
       </div>
       {showForm ? (
@@ -61,7 +60,7 @@ const SendMails = () => {
           <input
             type="text"
             name="firstName"
-            placeholder="Votre prénom"
+            placeholder="Your first name"
             className="input input-bordered w-full"
             value={formData.firstName}
             onChange={handleInputChange}
@@ -69,7 +68,7 @@ const SendMails = () => {
           <input
             type="text"
             name="lastName"
-            placeholder="Votre nom"
+            placeholder="Your last name"
             className="input input-bordered w-full"
             value={formData.lastName}
             onChange={handleInputChange}
@@ -77,7 +76,7 @@ const SendMails = () => {
           <input
             type="text"
             name="institution"
-            placeholder="Nom de votre établissement"
+            placeholder="Your company or institution"
             className="input input-bordered w-full"
             value={formData.institution}
             onChange={handleInputChange}
@@ -85,7 +84,7 @@ const SendMails = () => {
           <input
             type="email"
             name="email"
-            placeholder="Votre email"
+            placeholder="Your email"
             className="input input-bordered w-full"
             value={formData.email}
             onChange={handleInputChange}
@@ -93,19 +92,19 @@ const SendMails = () => {
           <input
             type="tel"
             name="phone"
-            placeholder="Téléphone"
+            placeholder="Phone number"
             className="input input-bordered w-full"
             value={formData.phone}
             onChange={handleInputChange}
           />
           <button type="submit" className="btn btn-primary w-full">
-            Envoyer
+            Send
           </button>
         </form>
       ) : (
         <div className="mt-6 text-center space-y-4 text-gray-800 border shadow-lg p-4">
           <h2 className="font-bold text-2xl">Hedi Fourati</h2>
-          <h2 className="text-xl">Responsable executif</h2>
+          <h2 className="text-xl">Executive Manager</h2>
           <div className="flex items-center justify-center gap-2">
             <a
               href="mailto:hedi.fourati@tunisian-pass.tn"

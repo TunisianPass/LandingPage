@@ -3,9 +3,6 @@ import Image from "next/image";
 import config from "@/config";
 import logo from "@/app/icon.png";
 
-// Add the Footer to the bottom of your landing page and more.
-// The support link is connected to the config.js file. If there's no config.mailgun.supportEmail, the link won't be displayed.
-
 const Footer = () => {
   return (
     <footer className="bg-base-200 border-t border-base-content/10">
@@ -31,7 +28,8 @@ const Footer = () => {
             </Link>
 
             <p className="mt-3 text-sm text-base-content/80">
-              {config.appDescription}
+              Increase your establishment’s visibility by boosting your online
+              presence. Exchange experiences to gain influence.
             </p>
             <p className="mt-3 text-sm text-base-content/60">
               © {new Date().getFullYear()} TunisianPass. All rights reserved
@@ -44,8 +42,8 @@ const Footer = () => {
               </div>
 
               <div className="flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm">
-                <Link href="/en" className="link link-hover">
-                  English
+                <Link href="/" className="link link-hover">
+                  French
                 </Link>
               </div>
             </div>

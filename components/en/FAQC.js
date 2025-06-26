@@ -2,26 +2,53 @@
 
 import { useRef, useState } from "react";
 
-// <FAQ> component is a lsit of <Item> component
+// <FAQ> component is a list of <Item> components
 // Just import the FAQ & add your FAQ content to the const faqList
 
 const faqList = [
   {
-    question: "Dois-je avoir un certain nombre de followers pour rejoindre ?",
-    answer: <div className="space-y-2 leading-relaxed">Non, il n&apos;y a pas de nombre minimum de followers requis. Nous accueillons les modèles, influenceurs et créateur de contenu à tous les stades de leur parcours.</div>,
+    question: "How long does it take to set up?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        Setup is completed within 72 hours maximum after your registration.
+      </div>
+    ),
   },
   {
-    question: "Dois-je publier sur les réseaux sociaux pour les offres que je récupère ?",
+    question: "What goals can I achieve through the game?",
     answer: (
       <p>
-        Oui, c&apos;est obligatoire. Publier du contenu de qualité sur les réseaux sociaux augmente votre visibilité et votre engagement, ce qui peut potentiellement conduire à plus d&apos;opportunités sur Tunisian Pass.
+        By having your in-store and/or online customers play, you can:
+        <br />
+        <br />
+        - Encourage customers to return quickly  
+        <br />
+        - Collect opt-in emails and phone numbers  
+        <br />
+        - Gain social media followers  
+        <br />
+        - Get reviews on the platforms of your choice (Google, TripAdvisor, etc.)  
+        <br />
+        - Attract new potential customers  
+        <br />
+        - Run surveys or questionnaires  
+        <br />
+        - Stimulate word-of-mouth (viral game, Insta stories, etc.)  
+        <br />
+        - Generate referrals  
+        <br />
+        - Drive purchases / increase average basket size  
+        <br />
+        - Get UGC (User-Generated Content) such as photos/videos  
       </p>
     ),
   },
   {
-    question: "Si je m'inscris, combien de temps faut-il pour être accepté ?    ",
+    question: "Do I set up my campaign on my own or with assistance?",
     answer: (
-      <div className="space-y-2 leading-relaxed">Notre processus de sélection varie. Nous avons une liste d&apos;attente, donc votre patience est appréciée. Vous recevrez une notification si votre candidature est acceptée.
+      <div className="space-y-2 leading-relaxed">
+        Our team supports you during the setup of your campaign. <br /><br />
+        We take care of creating and configuring your account. Once your campaign is online, you can adjust the settings yourself (change prizes, quantities offered, etc.).
       </div>
     ),
   },
@@ -87,7 +114,7 @@ const Item = ({ item }) => {
   );
 };
 
-const FAQ = () => {
+const FAQC = () => {
   return (
     <section className="bg-base-200" id="faq">
       <div className="py-24 px-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
@@ -108,4 +135,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default FAQC;

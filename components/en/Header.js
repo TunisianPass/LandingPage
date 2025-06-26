@@ -9,10 +9,11 @@ import config from "@/config";
 import SimpleBanner from "./SimpleBanner";
 const links = [
   {
-    href: "/fortune",
+    href: "/en/fortune",
     label: "Fortune",
   },
 ];
+
 
 // A header with a logo on the left, links in the center (like Pricing, etc...), and a CTA (like Get Started or Login) on the right.
 // The header is responsive, and on mobile, the links are hidden behind a burger button.
@@ -97,9 +98,9 @@ const Header = () => {
           <a
             className="animate-buttonheartbeat hidden sm:block text-white font-normal text-[17px] poppins leading-4 bg-[#111111] py-4 px-8 rounded-full"
             title="Get started"
-            href="/contact"
+            href="/en/contact"
           >
-            Commencer
+            Start now
           </a>
         </div>
       </nav>
@@ -165,8 +166,6 @@ const Header = () => {
                 ))}
               </div>
             </div>
-            <div className="divider"></div>
-            {/* Your CTA on small screens */}
           </div>
         </div>
       </div>
