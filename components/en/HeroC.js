@@ -16,7 +16,7 @@ const HeroC = () => {
         <p className="pt-32 max-w-[537px] mx-auto lg:max-w-[595px] 2xl:max-w-[800px] text-[#111111] text-[28px] lg:text-5xl 2xl:text-5xl font-semibold leading-12 lg:leading-14 2xl:leading-[64px] bricolage-grotesque-font text-center">
           Boost your Google reviews{" "}
           <span className="animate-textGradient bg-gradient-to-r from-[#FBC570] via-yellow-700 to-yellow-500 inline-block text-transparent bg-clip-text">
-            it's child's play!
+            it&apos;s child&apos;s play!
           </span>{" "}
         </p>
         <br />
