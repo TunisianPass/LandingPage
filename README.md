@@ -1,34 +1,32 @@
-# ShipFast — Javascript
+# TunisianPass — website
 
-Hey maker 👋 it's Marc from [ShipFast](https://shipfa.st/docs). Let's get your startup off the ground, FAST ⚡️
+The public website for TunisianPass, a customer-engagement project for businesses in Tunisia built around QR-code experiences and supporting business tools.
 
-<sub>**Watch/Star the repo to be notified when updates are pushed**</sub>
+The source includes French and English pages, contact flows and the wheel-of-fortune experience. It preserves a stage of the project; active development of TunisianPass has ended according to the project portfolio.
 
-## Get Started
+## Code map
 
-1. Follow the [Get Started Tutorial](https://shipfa.st/docs) to clone the repo and run your local server 💻
+- `app/` and `app/en/` — French and English routes.
+- `app/fortune/` and `app/en/fortune/` — fortune-wheel pages.
+- `components/` — landing-page sections and shared interface components.
+- `actions/` — contact and email actions.
+- `config.js` and `next-sitemap.config.js` — site and sitemap configuration.
 
-<sub>**Looking for the /pages router version?** Use this [documentation](https://shipfa.st/docs-old) instead</sub>
+## Local development
 
-2. Follow the [Ship In 5 Minutes Tutorial](https://shipfa.st/docs/tutorials/ship-in-5-minutes) to learn the foundation and ship your app quickly ⚡️
+```sh
+npm install
+npm run dev
+```
 
-## Links
+Copy `.env.example` to `.env.local` and configure only the integrations required for the flow being tested. The example originated from the starter and may include services that are not used by every page. Use development credentials; keep real secrets out of tracked files.
 
-- [📚 Documentation](https://shipfa.st/docs)
-- [📣 Updates](https://shipfast.beehiiv.com/)
-- [🧑‍💻 Discord](https://shipfa.st/dashboard)
+`npm run build`, `npm start` and `npm run lint` are defined in `package.json`. A build also invokes the `postbuild` sitemap command. Check the configured domain before deploying a fork or a local copy.
 
-## Support
+## Related project
 
-Reach out to me on [Twitter](https://twitter.com/marc_louvion) or marc@shipfa.st
+Business, administration and earlier portal implementations live in the [TunisianPass organisation](https://github.com/TunisianPass). They represent different stages of the product.
 
-\_
+## Starter attribution
 
-Let's ship it, FAST ⚡️
-
-P.S.
-
-- Want to showcase your startups? Get your [Indie Page](https://indiepa.ge?ref=shipfast_readme) and share your entrepreneur's journey. Join 3,132 founders ⭐️
-- Don't get banned from Stripe for 1 dispute. Use [ByeDispute](https://byedispute.com/?ref=shipfast_readme) to prevent them from happenening 🛡️
-- Make your launch go viral and get your first customers with [LaunchViral](https://launchvir.al/?ref=shipfast_readme) 🚀
-# student-info
+This project was started from the [ShipFast JavaScript starter](https://shipfa.st/), by Marc Louvion. The product-specific application and content are maintained in this repository. See the [upstream documentation](https://shipfa.st/docs) for the starter's setup and conventions.
